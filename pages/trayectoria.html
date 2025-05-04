@@ -54,21 +54,24 @@
     }
 
     .contenedor-prensa {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      padding: 2rem;
-      max-width: 1200px;
-      margin: auto;
-    }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
 
-    .entrevista {
-      background-color: #fff;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      transition: transform 0.3s ease;
-    }
+.entrevista {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  width: calc(25% - 1.5rem); /* 4 por fila */
+  min-width: 250px;
+}
 
     .entrevista:hover {
       transform: translateY(-5px);
@@ -191,7 +194,6 @@
 
   
   <section class="contenedor-prensa">
-    <!-- Tus entrevistas tal como las tenías -->
     <div class="entrevista">
       <img src="https://www.novalaplata.com/data/fotos2/1001553774_ixa2-(1).JPG" alt="Entrevista 1">
       <div class="entrevista-contenido">
@@ -199,7 +201,7 @@
         <a class="btn-ver" href="https://www.novalaplata.com/nota.asp?t=Aixa-Petriati-Tengo-muy-buenas-expectativas-porque-se-trata-de-una-nueva-propuesta&id=35496&id_tiponota=4" target="_blank">Ver entrevista</a>
       </div>
     </div>
-    <!-- Resto de entrevistas... -->
+  
     <div class="entrevista">
       <img src="https://diariohoynet.nyc3.cdn.digitaloceanspaces.com/adjuntos/galerias/000/162/0000162013.jpg" alt="Entrevista 2">
       <div class="entrevista-contenido">
@@ -207,6 +209,7 @@
         <a class="btn-ver" href="https://diariohoy.net/politica/confirmado-se-reabre-la-paritaria-estatal-en-la-provincia-67493#" target="_blank">Ver entrevista</a>
       </div>
     </div>
+  
     <div class="entrevista">
       <img src="../images/foto44.png" alt="Entrevista 3">
       <div class="entrevista-contenido">
@@ -214,11 +217,36 @@
         <a class="btn-ver" href="https://www.instagram.com/jorge.triaca/p/Cr1X_zSJPnK/?locale=bz-hans&hl=am-et&img_index=2" target="_blank">Ver entrevista</a>
       </div>
     </div>
+  
     <div class="entrevista">
       <img src="https://www.infobae.com/resizer/v2/https%3A%2F%2Fs3.amazonaws.com%2Farc-wordpress-client-uploads%2Finfobae-wp%2Fwp-content%2Fuploads%2F2017%2F06%2F15112827%2FCAMBIEMOS-FIANL.jpg?auth=a1abe65541844d122290c3a48620ca8fdd06fb8b92ba1c2c02ed377d45a0d7a5&smart=true&width=992&height=558&quality=85" alt="Entrevista 4">
       <div class="entrevista-contenido">
         <h3>Cierre de alianzas electorales en Buenos Aires – 2017</h3>
         <a class="btn-ver" href="https://www.infobae.com/politica/2017/06/15/con-la-presentacion-de-cambiemos-y-randazzo-se-cerro-la-inscripcion-de-alianzas-en-la-provincia-de-buenos-aires/" target="_blank">Ver entrevista</a>
+      </div>
+    </div>
+  
+    <div class="entrevista">
+      <img src="https://telefe-static2.akamaized.net/media/558274/marcha-uatre.jpg?width=888&height=500&mode=crop" alt="Entrevista 5">
+      <div class="entrevista-contenido">
+        <h3>Marcha en contra del líder de UATRE</h3>
+        <a class="btn-ver" href="https://amp.telefenoticias.com.ar/noticias/actualidad/marcha-en-contra-del-lider-de-uatre-denuncias-de-irregularidades-y-malversacion-de-fondos/" target="_blank">Ver entrevista</a>
+      </div>
+    </div>
+  
+    <div class="entrevista">
+      <img src="https://www.novalaplata.com/data/fotos2/1061547028_1.JPG" alt="Entrevista 6">
+      <div class="entrevista-contenido">
+        <h3>Aixa Petriati: “La idea de Gerónimo Venegas es rearmar el peronismo”</h3>
+        <a class="btn-ver" href="https://www.novalaplata.com/nota.asp?t=Aixa-Petriati-La-idea-de-Geronimo-Venegas-es-rearmar-el-peronismo&id=32286&id_tiponota=4" target="_blank">Ver entrevista</a>
+      </div>
+    </div>
+  
+    <div class="entrevista">
+      <img src="https://splendidam990.com/media/k2/items/cache/6a5b18eec19d6c43d9e350b67013c7c8_M.webp" alt="Entrevista 7">
+      <div class="entrevista-contenido">
+        <h3>Aixa Petriati: "Voytenco hace un congreso de la UATRE en Puerto Madryn con un gasto de mil millones de pesos"</h3>
+        <a class="btn-ver" href="https://splendidam990.com/noticias/aixa-petriati-voytenco-hace-un-congreso-de-la-uatre-en-puerto-madryn-con-un-gasto-de-mil-millones-de-pesos" target="_blank">Ver entrevista</a>
       </div>
     </div>
   </section>
